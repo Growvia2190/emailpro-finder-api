@@ -18,7 +18,7 @@ app.use(helmet());
 app.use(compression());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? ['https://your-lovable-app.lovableproject.com'] 
+    ? ['https://emailpro-finder.onrender.com'] 
     : ['http://localhost:3000', 'http://localhost:5173']
 }));
 app.use(express.json({ limit: '10mb' }));
